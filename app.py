@@ -139,6 +139,11 @@ You can push an existing repository from the command line
 (venv) PS D:\flask> git push -u origin main
 
 
+Commit changes as needed:
+(venv) PS D:\flask> git add .
+(venv) PS D:\flask> git commit -am "Modified app.py"
+(venv) PS D:\flask> git push
+
 Document history
 
 (venv) PS D:\flask> Get-History | Export-Csv history.csv
