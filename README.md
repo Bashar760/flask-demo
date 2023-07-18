@@ -106,30 +106,25 @@ presentation1.pptx
 
 ### Login and create an SSH key
 
-![alt text](img/Fig-1.png)
-![alt text](img/Fig-2.png)
-![alt text](img/Fig-3.png)
-![alt text](img/Fig-4.png)
+![alt text](img/Fig-1.png) ![alt text](img/Fig-2.png) ![alt text](img/Fig-3.png) ![alt text](img/Fig-4.png)
 
 ### Create repository
 
-![alt text](img/Fig-5.png)
-![alt text](img/Fig-6.png)
-![alt text](img/Fig-7.png)
+![alt text](img/Fig-5.png) ![alt text](img/Fig-6.png) ![alt text](img/Fig-7.png)
 
 Activate environment again then run the following commands:
 
-```html
-(venv) PS D:/flask> git config --global user.name "Bashar" 
-(venv) PS D:/flask> git config --global user.email "bashar750@gmail.com" 
-(venv) PS D:/flask> git config --global push.default matching 
-(venv) PS D:/flask> git config --global alias.co checkout 
+```powershell
+(venv) PS D:/flask> git config --global user.name "Bashar"
+(venv) PS D:/flask> git config --global user.email "bashar750@gmail.com"
+(venv) PS D:/flask> git config --global push.default matching
+(venv) PS D:/flask> git config --global alias.co checkout
 (venv) PS D:/flask> git init
 ```
 
 > Turn on Version Control
 
-```
+```powershell
 (venv) PS D:/flask> git add .
 (venv) PS D:/flask> git commit -am "Initial commit"
 ```
@@ -138,11 +133,11 @@ You can push an existing repository from the command line
 
 > Note: <br>Run the following command if you received the following error message error: remote origin already exists.
 
-```
+```powershell
 (venv) PS D:/flask> git remote remove origin
 ```
 
-```
+```powershell
 (venv) PS D:/flask> git remote add origin https://github.com/Bashar760/flask-demo.git
 (venv) PS D:/flask> git branch -M main
 (venv) PS D:/flask> git push -u origin main
@@ -150,7 +145,7 @@ You can push an existing repository from the command line
 
 > Commit changes as needed:
 
-```
+```powershell
 (venv) PS D:/flask> git add .
 (venv) PS D:/flask> git commit -am "Modified app.py"
 (venv) PS D:/flask> git push
@@ -158,7 +153,7 @@ You can push an existing repository from the command line
 
 > Document history
 
-````
+````powershell
 (venv) PS D:/flask> Get-History | Export-Csv history.csv
 (venv) PS D:/flask> Get-History | Out-File history.txt ```
 ````
