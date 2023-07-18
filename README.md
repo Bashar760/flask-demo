@@ -155,5 +155,5 @@ You can push an existing repository from the command line
 
 ````powershell
 (venv) PS D:/flask> Get-History | Export-Csv history.csv
-(venv) PS D:/flask> Get-History | Out-File history.txt ```
+(venv) PS D:/flask> Get-History | Out-File history.txt
 ````
