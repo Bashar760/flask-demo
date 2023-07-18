@@ -29,9 +29,9 @@ def hello_name(name):
 
 @app.route("/message")
 def index_page():
-    # flash("Good", "Success")
-    # flash("Warning", "Warning")
-    # flash("Error", "Error")
+    flash("Good", "Success")
+    flash("Warning", "Warning")
+    flash("Error", "Error")
     # return redirect(url_for('index'))
     return render_template("index.html")
 
@@ -45,6 +45,7 @@ def page_not_found(e):
 def internal_server_error(e):
     return render_template("500.html"), 500
 
+
 if __name__ == "__main__":
     app.run(debug=True)
 
@@ -52,7 +53,12 @@ if __name__ == "__main__":
 # PS D:/flask/> set FLASK_ENV=development
 # PS D:/flask/> set FLASK_App=app.py
 
-'''
+"""
+
+Source: https://www.youtube.com/watch?v=3O4ZmH5aolg&list=PLCC34OHNcOtolz2Vd9ZSeSXWc8Bq23yEz&index=3
+
+(venv) PS D:\flask> deactivate
+
 PS D:/flask/> cd ~
 PS C:/Users/BASHAR> 
 PS C:/Users/BASHAR> md .ssh
@@ -100,9 +106,15 @@ GmwgvzsQWOwe593K2vVLl0fvTuT9C6bdgu9thnZv48bCgO/B7MIw8FBhU
 outxmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 
 
-Create an .gitignore file:
+Create an .gitignore file as per the following example:
+    .gitignore
 
-Initialize Git for Version Control
+    venv/
+    .vscode/
+    __pycache__
+    presentation1.pptx
+
+Setup Git for Version Control
 Activate environment again then run the following commands:
 
 (venv) PS D:\flask> git config --global user.name "Bashar"
@@ -110,7 +122,20 @@ Activate environment again then run the following commands:
 (venv) PS D:\flask> git config --global push.default matching
 (venv) PS D:\flask> git config --global alias.co checkout
 (venv) PS D:\flask> git init
+
+Turn on Version Control
+
 (venv) PS D:\flask> git add .
 (venv) PS D:\flask> git commit -am "Initial commit"
 
-'''
+You can push an existing repository from the command line
+
+(Note: run the following command if you received the following error message error: remote origin already exists.)
+(venv) PS D:\flask> git remote remove origin
+
+
+(venv) PS D:\flask> git remote add origin https://github.com/Bashar760/flask-demo.git
+(venv) PS D:\flask> git branch -M main
+(venv) PS D:\flask> git push -u origin main
+
+"""
