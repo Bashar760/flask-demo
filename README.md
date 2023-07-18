@@ -78,8 +78,11 @@ PS C:/Users/BASHAR/.ssh> cat id_rsa.pub
 ```
 
 <pre>
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCikGtAXeSZnoH1UD3Yd LdRJldsfxlgkportypopiuoiernmnNNLJKNnbBqFFFwNmtYVxSEjXsUBO naTV9O1PkDv3aZuBrplXNc7MkrhEJA9qdXstCUgmvjv1XSWYs1in0zsvs
-BR6AwYQVt9ta5L91Op0Uw6N5n1hSAlVUuygYI03SoowijQMv/qL1ljLL6 Nakv4opqzSqFxKtJavpaBbhDC7E6IcsKYt9Ks6XgTefFs8/dktX08fKaY
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCikGtAXeSZnoH1UD3Yd
+LdRJldsfxlgkportypopiuoiernmnNNLJKNnbBqFFFwNmtYVxSEjXsUBO
+naTV9O1PkDv3aZuBrplXNc7MkrhEJA9qdXstCUgmvjv1XSWYs1in0zsvs
+BR6AwYQVt9ta5L91Op0Uw6N5n1hSAlVUuygYI03SoowijQMv/qL1ljLL6
+Nakv4opqzSqFxKtJavpaBbhDC7E6IcsKYt9Ks6XgTefFs8/dktX08fKaY
 E4RrXIxZysR3+ZgtlKY3PepfzbkKEjvmrAuRImJZP4TKqmr6xcSpDoRDZ
 QeW824IVt9ta5L91Op0Uw6N5n1hSAlVUuygYI0+wiZbUiNx97X554HbXt
 IWN4nAej99Os6NcA6Ujkw1PnQUcFkIHhDuyxggkhIlDHVUoz5u1pRTpGm
@@ -87,11 +90,7 @@ wgvzsQWOwe593K2vVLl0fvTuT9C6bdgu9thnZv48bCgOB7MIw8FBhUout
 xmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 </pre>
 
-` `
-
 > Copy contents to use it for setting up GitHub account
-
-` `
 
 > Create an .gitignore file to ignore all unneeded files and folders
 
