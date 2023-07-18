@@ -14,7 +14,7 @@ PS D:/flask/> set FLASK_App=app.py
 1 - Deactivate virtual environment
 
 ```powershell
-(venv) PS D:\flask> deactivate
+(venv) PS D:/flask> deactivate
 ```
 
 2 - Change to USER directory
@@ -120,18 +120,18 @@ presentation1.pptx
 Activate environment again then run the following commands:
 
 ```html
-(venv) PS D:\flask> git config --global user.name "Bashar" 
-(venv) PS D:\flask> git config --global user.email "bashar750@gmail.com" 
-(venv) PS D:\flask> git config --global push.default matching 
-(venv) PS D:\flask> git config --global alias.co checkout 
-(venv) PS D:\flask> git init
+(venv) PS D:/flask> git config --global user.name "Bashar" 
+(venv) PS D:/flask> git config --global user.email "bashar750@gmail.com" 
+(venv) PS D:/flask> git config --global push.default matching 
+(venv) PS D:/flask> git config --global alias.co checkout 
+(venv) PS D:/flask> git init
 ```
 
 > Turn on Version Control
 
 ```
-(venv) PS D:\flask> git add .
-(venv) PS D:\flask> git commit -am "Initial commit"
+(venv) PS D:/flask> git add .
+(venv) PS D:/flask> git commit -am "Initial commit"
 ```
 
 You can push an existing repository from the command line
@@ -139,26 +139,26 @@ You can push an existing repository from the command line
 > Note: <br>Run the following command if you received the following error message error: remote origin already exists.
 
 ```
-(venv) PS D:\flask> git remote remove origin
+(venv) PS D:/flask> git remote remove origin
 ```
 
 ```
-(venv) PS D:\flask> git remote add origin https://github.com/Bashar760/flask-demo.git
-(venv) PS D:\flask> git branch -M main
-(venv) PS D:\flask> git push -u origin main
+(venv) PS D:/flask> git remote add origin https://github.com/Bashar760/flask-demo.git
+(venv) PS D:/flask> git branch -M main
+(venv) PS D:/flask> git push -u origin main
 ```
 
 > Commit changes as needed:
 
 ```
-(venv) PS D:\flask> git add .
-(venv) PS D:\flask> git commit -am "Modified app.py"
-(venv) PS D:\flask> git push
+(venv) PS D:/flask> git add .
+(venv) PS D:/flask> git commit -am "Modified app.py"
+(venv) PS D:/flask> git push
 ```
 
 > Document history
 
 ````
-(venv) PS D:\flask> Get-History | Export-Csv history.csv
-(venv) PS D:\flask> Get-History | Out-File history.txt ```
+(venv) PS D:/flask> Get-History | Export-Csv history.csv
+(venv) PS D:/flask> Get-History | Out-File history.txt ```
 ````
