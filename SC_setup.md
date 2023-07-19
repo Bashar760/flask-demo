@@ -1,15 +1,6 @@
-# flask-demo
-
-> Following two commands will refresh the server automatically
-
-```powershell
-PS D:/flask/> set FLASK_ENV=development
-PS D:/flask/> set FLASK_App=app.py
-```
+# Setting up SOURCE CONTROL using GitHub
 
 [Video](https://www.youtube.com/watch?v=3O4ZmH5aolg&list=PLCC34OHNcOtolz2Vd9ZSeSXWc8Bq23yEz&index=3)
-
-## Setting up source control using GitHub
 
 1 - Deactivate virtual environment
 
@@ -106,11 +97,20 @@ presentation1.pptx
 
 ### Login and create an SSH key
 
-![alt text](img/Fig-1.png) ![alt text](img/Fig-2.png) ![alt text](img/Fig-3.png) ![alt text](img/Fig-4.png)
+![alt text](img/Fig-1.png)
+![alt text](img/Fig-2.png)
+![alt text](img/Fig-3.png)
+![alt text](img/Fig-4.png)
+![alt text](img/Fig-5.png)
+![alt text](img/Fig-6.png)
+![alt text](img/Fig-7.png)
 
 ### Create repository
 
-![alt text](img/Fig-5.png) ![alt text](img/Fig-6.png) ![alt text](img/Fig-7.png)
+![alt text](img/Fig-8.png)
+![alt text](img/Fig-9.png)
+![alt text](img/Fig-10.png)
+![alt text](img/Fig-11.png)
 
 Activate environment again then run the following commands:
 
@@ -153,7 +153,7 @@ You can push an existing repository from the command line
 
 > Document history
 
-````powershell
+```powershell
 (venv) PS D:/flask> Get-History | Export-Csv history.csv
 (venv) PS D:/flask> Get-History | Out-File history.txt
-````
+```
