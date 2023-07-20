@@ -49,3 +49,8 @@ def internal_server_error(e):
 if __name__ == "__main__":
     app.run(debug=True)
 
+
+# Following two commands will refresh the server automatically
+
+# PS D:/flask> set FLASK_ENV=development
+# PS D:/flask> set FLASK_App=app.py
