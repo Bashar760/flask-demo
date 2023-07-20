@@ -15,7 +15,7 @@ app.secret_key = "please_use_a_COMPLEX_secret_key"
 
 @app.route("/")
 def index():
-    return "Index Page STR"
+    return "String"
 
 
 @app.route("/hello")
@@ -25,7 +25,8 @@ def hello():
 
 @app.route("/hello/<name>")
 def hello_name(name):
-    return f"Hello, {escape(name)}!"
+    # Always escape untrusted vars to prevent any unwanted behaviour
+    return f"Hello, {escape(name).capitalize()}!"
 
 
 @app.route("/message")
@@ -53,13 +54,14 @@ def internal_server_error(e):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
-
-
-# Following two commands will refresh the server automatically
+    app.run()
 
 # PS D:/flask> set FLASK_ENV=development
 # PS D:/flask> set FLASK_App=app.py
+
+# Following command will refresh the server automatically
+
+# PS D:/flask> flask --app example_app.py --debug run
 
 # Following two commands can be used to save Powershell history
 
