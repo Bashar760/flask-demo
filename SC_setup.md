@@ -41,8 +41,8 @@ The key's randomart image is:
 +---[RSA 3072]----+
 |B. oo.o.         |
 | #.  o E         |
-|==* + + +        |
-|=.o+ o o *       |
+|=  + + +         |
+|=.o+ o o .       |
 | o.   o S +      |
 |. .+ o o +       |
 | oo o   = .      |
@@ -83,6 +83,10 @@ xmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 
 > Copy contents to use it for setting up GitHub account
 
+```html
+
+```
+
 > Create an .gitignore file to ignore all unneeded files and folders
 
 <pre>
@@ -98,18 +102,27 @@ presentation1.pptx
 ### Login and create an SSH key
 
 ![alt text](img/Fig-1.png)
+
 ![alt text](img/Fig-2.png)
+
 ![alt text](img/Fig-3.png)
+
 ![alt text](img/Fig-4.png)
+
 ![alt text](img/Fig-5.png)
+
 ![alt text](img/Fig-6.png)
+
 ![alt text](img/Fig-7.png)
 
 ### Create repository
 
 ![alt text](img/Fig-8.png)
+
 ![alt text](img/Fig-9.png)
+
 ![alt text](img/Fig-10.png)
+
 ![alt text](img/Fig-11.png)
 
 Activate environment again then run the following commands:
@@ -131,7 +144,8 @@ Activate environment again then run the following commands:
 
 You can push an existing repository from the command line
 
-> Note: <br>Run the following command if you received the following error message error: remote origin already exists.
+> Note: <br>Run the following command if you received the following error message
+> error: remote origin already exists.
 
 ```powershell
 (venv) PS D:/flask> git remote remove origin
