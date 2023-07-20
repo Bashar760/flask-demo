@@ -2,6 +2,7 @@
 
 # source: https://www.youtube.com/watch?v=0Qxtt4veJIc&list=PLCC34OHNcOtolz2Vd9ZSeSXWc8Bq23yEz&index=1
 
+# import logging
 from flask import Flask, render_template, flash, request, redirect, url_for
 from markupsafe import escape
 from flask_bootstrap import Bootstrap
@@ -29,10 +30,15 @@ def hello_name(name):
 
 @app.route("/message")
 def index_page():
-    flash("Good", "Success")
-    flash("Warning", "Warning")
-    flash("Error", "Error")
+    # flash("Good", "Success")
+    # flash("Warning", "Warning")
+    # flash("Error", "Error")
     # return redirect(url_for('index'))
+    
+    # app.logger.debug('A value for debugging')
+    # app.logger.warning('A warning occurred (%d apples)', 42)
+    # app.logger.error('An error occurred')
+    
     return render_template("index.html")
 
 
@@ -54,3 +60,8 @@ if __name__ == "__main__":
 
 # PS D:/flask> set FLASK_ENV=development
 # PS D:/flask> set FLASK_App=app.py
+
+# Following two commands can be used to save Powershell history
+
+# PS D:/flask> Get-History | Export-Csv history.csv
+# PS D:/flask> Get-History | Out-File history.txt

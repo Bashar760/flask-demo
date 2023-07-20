@@ -81,13 +81,9 @@ wgvzsQWOwe593K2vVLl0fvTuT9C6bdgu9thnZv48bCgOB7MIw8FBhUout
 xmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 </pre>
 
-> Copy contents to use it for setting up GitHub account
+-   Copy contents to use it for setting up GitHub account
 
-```html
-
-```
-
-> Create an .gitignore file to ignore all unneeded files and folders
+-   Create an .gitignore file to ignore all unneeded files and folders
 
 <pre>
 .gitignore
@@ -144,8 +140,7 @@ Activate environment again then run the following commands:
 
 You can push an existing repository from the command line
 
-> Note: <br>Run the following command if you received the following error message
-> error: remote origin already exists.
+> Note: <br>Run the following command if you received the following error message error: remote origin already exists.
 
 ```powershell
 (venv) PS D:/flask> git remote remove origin
@@ -163,11 +158,4 @@ You can push an existing repository from the command line
 (venv) PS D:/flask> git add .
 (venv) PS D:/flask> git commit -am "Modified app.py"
 (venv) PS D:/flask> git push
-```
-
-> Document history
-
-```powershell
-(venv) PS D:/flask> Get-History | Export-Csv history.csv
-(venv) PS D:/flask> Get-History | Out-File history.txt
 ```

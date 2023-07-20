@@ -7,20 +7,27 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='css/favicon.ico') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
-    <title>Title</title>
-    {% block head %} {% endblock head %}
+    <title>Default Title</title>
+    {% block style %} {% endblock style %}
 </head>
 
 <body>
     <div class="container">
-        {% block body %} {% include "navbar.html" %} {% block message %} {{ messages }} {% with messages=get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% block body %}
+        {% include "navbar.html" %}
+        {# block message %}
+        {% with messages=get_flashed_messages() %}
+        {% if messages %}
         <ul class="flashes">
             {% for category, message in messages %}
             <li class="{{ category }}">{{ message }}</li>
             {% endfor %}
         </ul>
-        {% endif %} {% endwith %} {% endblock message %} {% endblock body %}
+        {% endif %}
+        {% endwith %}
+        {% endblock message #}
+        {% endblock body %}
     </div>
 </body>
-!
+
 </html>
