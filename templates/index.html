@@ -1,1 +1,19 @@
 {% extends 'base.html' %}
+
+<!-- Jinja filters examples: safe, capitalize, lower, upper, title, trim, striptags -->
+
+{% block content %}
+
+<h1>Hello my name is {{ context.name|title }} {{ context.lname|upper }}</h1>
+<p>My favorite pizza topping is {{ context.pizza.1 }}</p>
+<ul>
+    {% for p in context.pizza %}
+    {% if p == 41 %}
+    <li>{{ p + 9 }}</li>
+    {% else %}
+    <li>{{ p }}</li>
+    {% endif %}
+    {% endfor %}
+</ul>
+
+{% endblock content %}

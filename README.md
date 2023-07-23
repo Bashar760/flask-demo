@@ -81,9 +81,9 @@ wgvzsQWOwe593K2vVLl0fvTuT9C6bdgu9thnZv48bCgOB7MIw8FBhUout
 xmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 </pre>
 
--   Copy contents to use it for setting up GitHub account
+- Copy contents to use it for setting up GitHub account
 
--   Create an .gitignore file to ignore all unneeded files and folders
+- Create an .gitignore file to ignore all unneeded files and folders
 
 <pre>
 .gitignore
@@ -97,29 +97,29 @@ presentation1.pptx
 
 ### Login and create an SSH key
 
-![alt text](img/Fig-1.png)
+![alt text](static/img/Fig-1.png)
 
-![alt text](img/Fig-2.png)
+![alt text](static/img/Fig-2.png)
 
-![alt text](img/Fig-3.png)
+![alt text](static/img/Fig-3.png)
 
-![alt text](img/Fig-4.png)
+![alt text](static/img/Fig-4.png)
 
-![alt text](img/Fig-5.png)
+![alt text](static/img/Fig-5.png)
 
-![alt text](img/Fig-6.png)
+![alt text](static/img/Fig-6.png)
 
-![alt text](img/Fig-7.png)
+![alt text](static/img/Fig-7.png)
 
 ### Create repository
 
-![alt text](img/Fig-8.png)
+![alt text](static/img/Fig-8.png)
 
-![alt text](img/Fig-9.png)
+![alt text](static/img/Fig-9.png)
 
-![alt text](img/Fig-10.png)
+![alt text](static/img/Fig-10.png)
 
-![alt text](img/Fig-11.png)
+![alt text](static/img/Fig-11.png)
 
 Activate environment again then run the following commands:
 
