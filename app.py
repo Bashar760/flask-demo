@@ -184,7 +184,6 @@ def logout():
     session.pop("user", None)
     session.pop("email", None)
     return render_template("login.html")
-    
 
 @app.route("/user", methods=["GET", "POST"])
 def user():
