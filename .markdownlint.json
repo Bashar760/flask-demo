@@ -1,6 +1,0 @@
-{
-    "MD033": {
-        "allowed_elements": ["span", "pre", "br"]
-    },
-    "MD013": false
-}
