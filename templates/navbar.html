@@ -29,6 +29,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('name') }}" tabindex="-1" aria-disabled="true">Name</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('add_user') }}" tabindex="-1" aria-disabled="true">Add User</a>
+                </li>
+                <li class="nav-item">
+                    <a id="login" class="nav-link" href="{{ url_for('login') }}" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a id="logout" class="nav-link disabled" href="{{ url_for('logout') }}" tabindex="-1" aria-disabled="true">Logout</a>
+                </li>
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
