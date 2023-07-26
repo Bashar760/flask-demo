@@ -18,8 +18,10 @@ from wtforms.validators import DataRequired
 # Import SQLAlchemy
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timedelta
+from admin.another_prg import admin
 
 app = Flask(__name__)
+app.register_blueprint(admin, url_prefix="/admin")
 
 # Refer to Flask CONFIG Documentation: https://flask.palletsprojects.com/en/2.3.x/config/
 # Create CSRF Token to be used by FORMS, Sessions and Cookies
@@ -148,10 +150,10 @@ def players(name):
     return f"Hello, {escape(name).capitalize()}!"
 
 
-@app.route("/admin")
-def admin():
-    # Enter the name of the FUNCTION to redirect to
-    return redirect(url_for("home"))
+# @app.route("/admin")
+# def admin():
+#     # Enter the name of the FUNCTION to redirect to
+#     return redirect(url_for("home"))
 
 
 @app.route("/log")
@@ -185,6 +187,7 @@ def logout():
     session.pop("email", None)
     return render_template("login.html")
 
+
 @app.route("/user", methods=["GET", "POST"])
 def user():
     email = None
@@ -204,7 +207,6 @@ def user():
         flash("You are not logged in!")
         # return render_template("login.html")
         return redirect(url_for("login"))
-    
 
 
 @app.route("/name", methods=["GET", "POST"])
