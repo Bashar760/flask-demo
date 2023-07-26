@@ -97,6 +97,8 @@ presentation1.pptx
 
 ### Login and create an SSH key
 
+<style>img { width: 50%; }</style>
+
 ![alt text](static/img/Fig-1.png)
 
 ![alt text](static/img/Fig-2.png)
