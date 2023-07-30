@@ -38,9 +38,10 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///users.db"
 # Initialize database
 db = SQLAlchemy(app)
 
+
 # Create model
 class Users(db.Model):
-    __tablename__ = 'users'
+    __tablename__ = "users"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(200), nullable=False)
     email = db.Column(db.String(120), nullable=False, unique=True)
@@ -53,6 +54,7 @@ class Users(db.Model):
     def __repr__(self):
         return f"<Name: {self.name!r}>"
 
+
 """
 Create model using shell
 (venv) PS D:\flask> flask shell
@@ -60,6 +62,7 @@ Create model using shell
 >>> db.create_all()
 >>> exit()
 """
+
 
 # Create a Form Class
 class UserForm(FlaskForm):
@@ -93,6 +96,7 @@ def add_user():
 class NamerForm(FlaskForm):
     name = StringField("What is you name?", validators=[DataRequired()])
     submit = SubmitField("Submit")
+
 
 """
 # FIELDS TYPES
@@ -131,6 +135,7 @@ class NamerForm(FlaskForm):
 # NoneOf
 """
 
+
 @app.route("/hello")
 def hello():
     return "Hello, World"
@@ -165,7 +170,7 @@ def log():
 
 @app.route("/login", methods=["GET", "POST"])
 def login():
-    if request.method == 'POST':
+    if request.method == "POST":
         # session.permanent = True
         # user = request.form.get("name")
         user = request.form["name"]
@@ -175,7 +180,7 @@ def login():
     else:
         if "user" in session:
             return redirect(url_for("user"))
-        
+
         return render_template("login.html")
 
 
@@ -190,7 +195,7 @@ def logout():
 @app.route("/user", methods=["GET", "POST"])
 def user():
     email = None
-    
+
     if "user" in session:
         user = session["user"]
         if request.method == "POST":
@@ -199,8 +204,7 @@ def user():
         else:
             if "email" in session:
                 email = session["email"]
-                
-            
+
         return render_template("user.html", name=user, email=email)
     else:
         flash("You are not logged in!")
