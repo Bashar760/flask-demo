@@ -22,7 +22,7 @@ PS C:/Users/BASHAR> md .ssh
 PS C:/Users/BASHAR> cd .ssh
 ```
 
-4 - Generate SSH private and public keys <span style='color:red'>(ignore password)</span>
+4 - Generate SSH private and public keys <span style='color:orange'>(ignore password)</span>
 
 ```powershell
 PS C:/Users/BASHAR/.ssh> ssh-keygen.exe
@@ -87,17 +87,20 @@ xmjGaHM0fQhvYaXeUDwh7gXJN++2Q+tv4fE= bashar@Bashar-PC
 
 <pre>
 .gitignore
-venv/
-.vscode/
 __pycache__
-presentation1.pptx
+venv/
+instance/
+.vscode/
+.python-version
+.markdownlint.json
+.prettierrc.json
 </pre>
 
 ## Setup Git for Version Control on GitHub
 
 ### Login and create an SSH key
 
-<style>img { width: 50%; }</style>
+<style>img { width: 80%; }</style>
 
 ![alt text](static/img/Fig-1.png)
 
